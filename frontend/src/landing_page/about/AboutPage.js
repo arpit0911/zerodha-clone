@@ -7,10 +7,8 @@ import { Footer } from "../Footer";
 export const AboutPage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Team />
-      <Footer />
     </>
   );
 };

@@ -7,10 +7,8 @@ import { Footer } from "../Footer";
 export const SupportPage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <CreateTicket />
-      <Footer />
     </>
   );
 };

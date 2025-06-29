@@ -11,14 +11,12 @@ import { Navbar } from "../Navbar";
 export const HomePage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Awards />
       <Stats />
       <Pricing />
       <Education />
       <OpenAccount />
-      <Footer />
     </>
   );
 };

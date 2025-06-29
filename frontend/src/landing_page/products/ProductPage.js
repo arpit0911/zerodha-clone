@@ -9,12 +9,10 @@ import { Footer } from "../Footer";
 export const ProductPage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <LeftSection />
       <RightSection />
       <Universe />
-      <Footer />
     </>
   );
 };

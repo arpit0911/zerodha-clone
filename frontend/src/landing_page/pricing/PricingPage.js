@@ -7,10 +7,8 @@ import { Footer } from "../Footer";
 export const PricingPage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Brokerage />
-      <Footer />
     </>
   );
 };
