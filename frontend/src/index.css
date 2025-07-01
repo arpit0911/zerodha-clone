@@ -18,3 +18,7 @@ code {
 .footer-link {
   color: gray;
 }
+#search-control:focus {
+  box-shadow: none;
+  border-color: #ccc;
+}
