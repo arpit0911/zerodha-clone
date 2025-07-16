@@ -263,21 +263,31 @@ code {
   width: 30px;
   height: 20px;
 }
-
 .menus {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 100%;
 }
 
 .menus ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .menus li {
-  display: inline-block;
   margin-right: 30px;
   text-decoration: none;
+}
+
+.menus li p {
+  margin: 0;
+  line-height: 1rem; /* helps with consistent vertical height */
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -291,15 +301,15 @@ code {
 }
 
 hr {
-  border-left: 0.8px solid rgb(243, 242, 242);
+  border-left: 0.8px solid rgb(97, 97, 97);
   height: 30px;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-left: 20px;
+  height: 100%;
+  padding: 10px;
 }
 
 .profile .avatar {
@@ -322,6 +332,10 @@ hr {
 .profile .username {
   font-size: 0.8rem;
   font-weight: 300;
+  margin: 0;
+  line-height: 1rem; /* helps with consistent vertical height */
+  display: flex;
+  align-items: center;
 }
 
 /* sudo selectors */
