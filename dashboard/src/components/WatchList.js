@@ -1,7 +1,22 @@
-import React from 'react'
+import React from "react";
 
-export const WatchList = () => {
+const WatchList = () => {
   return (
-    <div>WatchList</div>
-  )
-}
+    <div className="watchlist-container">
+      <div className="search-container">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
+          className="search"
+        />
+        <span className="counts"> 9 / 50</span>
+      </div>
+
+      <ul className="list"></ul>
+    </div>
+  );
+};
+
+export default WatchList;

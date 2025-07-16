@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export const Home = () => {
+import Dashboard from "./Dashboard";
+import TopBar from "./TopBar";
+
+const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <TopBar />
+      <Dashboard />
+    </>
+  );
+};
+
+export default Home;
