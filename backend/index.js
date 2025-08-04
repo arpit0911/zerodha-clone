@@ -1,6 +1,9 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+
 const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
 
@@ -9,6 +12,8 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
+app.use(cors());
+app.use(bodyParser.json());
 // app.get("/initDBHoldings", async (req, res) => {
 //   const holdings = [
 //     {
