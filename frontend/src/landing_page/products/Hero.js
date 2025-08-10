@@ -9,7 +9,7 @@ export const Hero = () => {
       </h3>
       <p className="mb-5 pb-5">
         Check out our
-        <a href="#" style={{ textDecoration: "none" }}>
+        <a href="/" style={{ textDecoration: "none" }}>
           investment offerings&nbsp;
           <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         </a>

@@ -32,14 +32,14 @@ export const Team = () => {
           <p>Playing basketball is his zen.</p>
           <p>
             Connect on
-            <a href="#" className="text-decoration-none">
+            <a href="/" className="text-decoration-none">
               &nbsp;Homepage&nbsp;
             </a>
             /
-            <a href="#" className="text-decoration-none">
+            <a href="/" className="text-decoration-none">
               &nbsp;TradingQnA&nbsp;
             </a>
-            <a href="#" className="text-decoration-none">
+            <a href="/" className="text-decoration-none">
               Twitter
             </a>
           </p>

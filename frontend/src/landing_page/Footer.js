@@ -30,42 +30,42 @@ export const Footer = () => {
           </div>
           <div className="col">
             <p>Account</p>
-            <a href="#" className="text-decoration-none footer-link ">
+            <a href="/" className="text-decoration-none footer-link ">
               Open demat account
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               Minor demat account
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               NRI demat account
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               Commodity
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               Dematerialisation
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               Fund transfer{" "}
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               MTF
             </a>
             <br />
             <br />
-            <a href="#" className="text-decoration-none footer-link">
+            <a href="/" className="text-decoration-none footer-link">
               Referral program
             </a>
             <br />

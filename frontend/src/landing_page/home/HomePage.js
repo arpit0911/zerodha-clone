@@ -5,8 +5,8 @@ import { Education } from "./Education";
 import { Hero } from "./Hero";
 import { Awards } from "./Awards";
 import { OpenAccount } from "../OpenAccount";
-import { Footer } from "../Footer";
-import { Navbar } from "../Navbar";
+// import { Footer } from "../Footer";
+// import { Navbar } from "../Navbar";
 
 export const HomePage = () => {
   return (

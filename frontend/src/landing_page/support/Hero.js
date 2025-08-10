@@ -12,7 +12,7 @@ export const Hero = () => {
           <div>
             <a
               className="text-decoration-none text-light pb-1 border-bottom border-white fw-bold fs-6"
-              href="#"
+              href="/"
             >
               Track tickets
             </a>
@@ -36,27 +36,27 @@ export const Hero = () => {
             </div>
             <div className="d-flex my-3 flex-wrap">
               <a
-                href="#"
+                href="/"
                 class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
               >
                 Track account opening
               </a>
               <a
-                href="#"
+                href="/"
                 class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
               >
                 Track segment activation
               </a>
 
               <a
-                href="#"
+                href="/"
                 class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
               >
                 Intraday margins
               </a>
 
               <a
-                href="#"
+                href="/"
                 class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3 "
               >
                 Kite user manual
@@ -69,7 +69,7 @@ export const Hero = () => {
               <li className="mb-3 fw-bold">
                 <a
                   className="text-light text-decoration-underline pe-5 me-5"
-                  href="#"
+                  href="/"
                 >
                   Exclusion of F&O contracts on 8 securities from August 29,
                   2025
@@ -78,7 +78,7 @@ export const Hero = () => {
               <li className="fw-bold">
                 <a
                   className="text-light text-decoration-underline  pe-5 me-5"
-                  href="#"
+                  href="/"
                 >
                   Revision in expiry day of Index and Stock derivatives
                   contracts

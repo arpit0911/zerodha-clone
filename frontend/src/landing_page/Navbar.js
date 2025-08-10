@@ -59,7 +59,7 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="/">
                   <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
               </li>

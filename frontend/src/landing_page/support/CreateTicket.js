@@ -15,35 +15,35 @@ export const CreateTicket = () => {
             </h1>
             <div className="row ms-3">
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Resident individual
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Minor
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Non Resident Indian (NRI)
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Company, Partnership, HUF and LLP
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
@@ -58,28 +58,28 @@ export const CreateTicket = () => {
             </h1>
             <div className="row ms-3">
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Add money
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Withdraw money
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Add bank accounts
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
@@ -96,35 +96,35 @@ export const CreateTicket = () => {
             </h1>
             <div className="row ms-3">
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Your Profile
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Account modification
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Client Master Report (CMR) and Depository Participant (DP)
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Nomination
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
@@ -139,42 +139,42 @@ export const CreateTicket = () => {
             </h1>
             <div className="row ms-3">
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Portfolio
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Corporate actions
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Funds statement
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Reports
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Profile
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
@@ -191,42 +191,42 @@ export const CreateTicket = () => {
             </h1>
             <div className="row ms-3">
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 IPO
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Trading FAQs
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Margin Trading Facility (MTF) and Margins
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Charts and orders
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Alerts and Nudges
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
@@ -241,35 +241,35 @@ export const CreateTicket = () => {
             </h1>
             <div className="row ms-3">
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Mutual funds
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 National Pension Scheme (NPS)
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Features on Coin
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
                 Payments and Orders
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-decoration-none mt-2"
                 style={{ fontSize: "0.9rem" }}
               >
