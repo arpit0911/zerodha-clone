@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
 const { OrdersModel } = require("./model/OrdersModel");
+const authRoute = require("./routes/AuthRoute");
+
 
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
@@ -207,6 +209,8 @@ app.post("/newOrder", (req, res) => {
 
   res.send("Order saved!");
 });
+
+app.use("/signup", authRoute);
 
 app.listen(PORT, () => {
   console.log("Server listening to port 3002");
