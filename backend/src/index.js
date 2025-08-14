@@ -5,11 +5,14 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
-const { HoldingsModel } = require("./model/HoldingsModel");
-const { PositionsModel } = require("./model/PositionsModel");
-const { OrdersModel } = require("./model/OrdersModel");
-const authRoute = require("./routes/AuthRoute");
-const initRoute = require("./routes/InitRoute");
+// const { HoldingsModel } = require("./model/HoldingsModel");
+// const { PositionsModel } = require("./model/PositionsModel");
+// const { OrdersModel } = require("./model/OrdersModel");
+const AuthRoute = require("./routes/AuthRoute");
+const InitRoute = require("./routes/InitRoute");
+const HoldingsRoute = require("./routes/HoldingsRoute");
+const PositionsRoute = require("./routes/PositionsRoute");
+const OrderRoute = require("./routes/OrderRoute");
 
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
@@ -26,33 +29,11 @@ app.use(
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-app.get("/allHoldings", async (req, res) => {
-  let allHoldings = await HoldingsModel.find({});
-
-  res.json(allHoldings);
-});
-
-app.get("/allPositions", async (req, res) => {
-  let allPositions = await PositionsModel.find({});
-
-  res.json(allPositions);
-});
-
-app.post("/newOrder", (req, res) => {
-  let newOrder = new OrdersModel({
-    name: req.body.name,
-    qty: req.body.qty,
-    price: req.body.price,
-    mode: req.body.mode,
-  });
-
-  newOrder.save();
-
-  res.send("Order saved!");
-});
-
-app.use("/auth", authRoute);
-app.use("/init", initRoute);
+app.use("/auth", AuthRoute);
+app.use("/init", InitRoute);
+app.use("/holdings", HoldingsRoute);
+app.use("/positions", PositionsRoute);
+app.use("/orders", OrderRoute);
 
 app.listen(PORT, () => {
   console.log("Server listening to port 3002");
