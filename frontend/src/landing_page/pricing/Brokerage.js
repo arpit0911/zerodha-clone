@@ -6,11 +6,11 @@ export const Brokerage = () => {
       <div className="row p-5 mt-5 text-center border-top">
         <div className="col-8 p-4">
           <a href="" style={{ textDecoration: "none" }}>
-            <h3 className="fs-5">Brokerage calculator</h3>
+            <h3 className="fs-5 mb-5">Brokerage calculator</h3>
           </a>
           <ul
             style={{ textAlign: "left", lineHeight: "2.5", fontSize: "12px" }}
-            className="text-mut"
+            className="text-muted"
           >
             <li>
               Call & Trade and RMS auto-squareoff:Additional charges of ₹50 +
@@ -37,8 +37,90 @@ export const Brokerage = () => {
         </div>
         <div className="col-4 p-4">
           <a href="" style={{ textDecoration: "none" }}>
-            <h3 className="fs-5">List of charges</h3>
+            <h3 className="fs-5 mb-5">List of charges</h3>
           </a>
+          <ul
+            style={{
+              textAlign: "left",
+              lineHeight: "2.5",
+              fontSize: "12px",
+              listStyleType: "none",
+            }}
+            className="text-muted"
+          >
+            <li className="d-flex align-items-end justify-content-center text-uppercase">
+              <span
+                className="text-dark"
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                -
+              </span>
+            </li>
+            <li className="d-flex align-items-end justify-content-center text-uppercase">
+              <span
+                className="text-dark"
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                -
+              </span>
+            </li>
+            <li className="d-flex align-items-end justify-content-center text-uppercase">
+              <span
+                className="text-dark"
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                -
+              </span>
+            </li>
+            <li className="d-flex align-items-end justify-content-center text-uppercase">
+              <span
+                className="text-dark"
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                -
+              </span>
+            </li>
+            <li className="d-flex align-items-end justify-content-center text-uppercase">
+              <span
+                className="text-dark"
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                -
+              </span>
+            </li>
+            <li className="d-flex align-items-end justify-content-center text-uppercase">
+              <span
+                className="text-dark "
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                -
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

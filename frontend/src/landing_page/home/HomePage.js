@@ -10,8 +10,7 @@ import { useAuth } from "../../Auth/AuthProvider";
 // import { Navbar } from "../Navbar";
 
 export const HomePage = () => {
-  const auth = useAuth();
-  console.log("Auth state->", auth);
+  const { user } = useAuth();
   return (
     <>
       <Hero />
@@ -19,7 +18,7 @@ export const HomePage = () => {
       <Stats />
       <Pricing />
       <Education />
-      <OpenAccount />
+      {!user && <OpenAccount />}
     </>
   );
 };

@@ -11,7 +11,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [cookies, setCookie, removeCookie] = useCookies(["token"]);
+  const [cookies, removeCookie] = useCookies(["token"]);
 
   const navigate = useNavigate();
 
@@ -49,10 +49,10 @@ export const AuthProvider = ({ children }) => {
       const { success, message, user: signedUpUser } = data;
       if (success) {
         handleSuccess(message);
-        setUser(signedUpUser);
+        setUser(signedUpUser?.username);
         setTimeout(() => {
           // window.location.href = process.env.REACT_APP_DASHBOARD_URL;
-          navigate("/support");
+          navigate("/");
         }, 1000);
       } else {
         handleError(message);
@@ -83,7 +83,7 @@ export const AuthProvider = ({ children }) => {
         setUser(loggedInUser); // Set user state immediately on login
         setTimeout(() => {
           //   window.location.href = process.env.REACT_APP_DASHBOARD_URL;
-          navigate("/about");
+          navigate("/");
         }, 1000);
       } else {
         handleError(message);
@@ -102,7 +102,7 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     // localStorage.removeItem("authToken");
     removeCookie("token");
-    navigate("/login");
+    navigate("/");
   };
 
   // Check for an existing token on app load
