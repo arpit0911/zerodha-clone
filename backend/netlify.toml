@@ -1,8 +1,8 @@
-[build]
-  # This command will be run on Netlify's servers to install your dependencies.
-  command = "npm install"
-  # This is the directory where your serverless functions are located.
-  functions = "src" # This is the directory Netlify scans for function files.
-
 [functions]
-  included_files = ["src/**"]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"

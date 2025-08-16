@@ -19,6 +19,7 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
+app.use(mongoose.connect(uri).then(() => console.log("MongoDB connected.")));
 app.use(
   cors({
     origin: ["http://localhost:3000", "http://localhost:3001"],
