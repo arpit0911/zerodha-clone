@@ -2,7 +2,8 @@
   # This command will be run on Netlify's servers to install your dependencies.
   command = "npm install"
   # This is the directory where your serverless functions are located.
-  functions = "functions"
+  functions = "functions" # This is the directory Netlify scans for function files.
 
 [functions]
   included_files = ["src/**"]
+  node_bundler = "zisi"
