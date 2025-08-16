@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import { Link } from "react-router-dom";
 import { Login } from "../login/Login";
+import { useAuth } from "../../Auth/AuthProvider";
 
 export const Signup = () => {
-  const navigate = useNavigate();
+  const { signUp } = useAuth();
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -32,45 +31,11 @@ export const Signup = () => {
     }
   };
 
-  const handleError = (err) =>
-    toast.error(err, {
-      position: "bottom-left",
-    });
-  const handleSuccess = (msg) =>
-    toast.success(msg, {
-      position: "bottom-right",
-    });
-
   const handleSignup = async (e) => {
     e.preventDefault();
     const { username, email, password, confirmPassword } = formData;
-    if (password !== confirmPassword) {
-      handleError("Passwords do not match.");
-      return;
-    }
-    try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/auth/signup`,
-        {
-          // Only send necessary data to the backend
-          username,
-          email,
-          password,
-        },
-        { withCredentials: true }
-      );
-      const { success, message } = data;
-      if (success) {
-        handleSuccess(message);
-        setTimeout(() => {
-          window.location.href = process.env.REACT_APP_DASHBOARD_URL;
-        }, 1000);
-      } else {
-        handleError(message);
-      }
-    } catch (error) {
-      console.log(error);
-    }
+
+    signUp({ username, email, password, confirmPassword });
     setFormData({
       email: "",
       password: "",

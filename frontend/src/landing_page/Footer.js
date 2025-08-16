@@ -16,16 +16,16 @@ export const Footer = () => {
               &copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.
             </p>
             <div className="d-flex">
-              <i class="fa fa-twitter me-3" aria-hidden="true"></i>
-              <i class="fa fa-facebook-square me-3" aria-hidden="true"></i>
-              <i class="fa fa-instagram me-3" aria-hidden="true"></i>
-              <i class="fa fa-linkedin me-3" aria-hidden="true"></i>
+              <i className="fa fa-twitter me-3" aria-hidden="true"></i>
+              <i className="fa fa-facebook-square me-3" aria-hidden="true"></i>
+              <i className="fa fa-instagram me-3" aria-hidden="true"></i>
+              <i className="fa fa-linkedin me-3" aria-hidden="true"></i>
             </div>
             <hr />
             <div className="d-flex">
-              <i class="fa fa-youtube-play me-3" aria-hidden="true"></i>
-              <i class="fa fa-whatsapp me-3" aria-hidden="true"></i>
-              <i class="fa fa-telegram me-3" aria-hidden="true"></i>
+              <i className="fa fa-youtube-play me-3" aria-hidden="true"></i>
+              <i className="fa fa-whatsapp me-3" aria-hidden="true"></i>
+              <i className="fa fa-telegram me-3" aria-hidden="true"></i>
             </div>
           </div>
           <div className="col">

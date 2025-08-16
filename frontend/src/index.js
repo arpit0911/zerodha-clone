@@ -11,20 +11,26 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./landing_page/Navbar";
 import { Footer } from "./landing_page/Footer";
 import { NotFound } from "./landing_page/NotFound";
+import { AuthProvider } from "./Auth/AuthProvider";
+import { CookiesProvider } from "react-cookie";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/about" element={<AboutPage />}></Route>
-      <Route path="/products" element={<ProductPage />}></Route>
-      <Route path="/pricing" element={<PricingPage />}></Route>
-      <Route path="/support" element={<SupportPage />}></Route>
-      <Route path="*" element={<NotFound />}></Route>
-    </Routes>
-    <Footer />
+    <CookiesProvider>
+      <AuthProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/products" element={<ProductPage />}></Route>
+          <Route path="/pricing" element={<PricingPage />}></Route>
+          <Route path="/support" element={<SupportPage />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+        <Footer />
+      </AuthProvider>
+    </CookiesProvider>
   </BrowserRouter>
 );

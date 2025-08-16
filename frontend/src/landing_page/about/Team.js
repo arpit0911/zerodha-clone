@@ -9,19 +9,19 @@ export const Team = () => {
       <div className="row p-5 mt-5">
         <div className="col text-center">
           <img
-            src="/media/images/nithinKamath.jpg"
-            alt="Nithin Kamath"
+            src="/media/images/profile.jpg"
+            alt="Arpit Singh"
             className="img-fluid rounded-circle mb-3"
-            style={{ width: "60%" }}
+            style={{ width: "60%", height: "60%", objectFit: "cover" }}
           />
-          <p>Nithin Kamath</p>
+          <p>Arpit Singh</p>
           <p className="text-muted" style={{ fontSize: "0.8rem" }}>
             Founder & CEO
           </p>
         </div>
         <div className="col">
           <p>
-            Nithin bootstrapped and founded Zerodha in 2010 to overcome the
+            Arpit bootstrapped and founded Zerodha in 2010 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,
             Zerodha has changed the landscape of the Indian broking industry.
           </p>

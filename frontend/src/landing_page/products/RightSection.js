@@ -15,7 +15,7 @@ export const RightSection = ({
           <div className="mb-4">
             <a className="me-5 text-decoration-none" href={learnMore}>
               Learn More
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
         </div>
