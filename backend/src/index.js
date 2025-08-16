@@ -35,8 +35,11 @@ app.use("/holdings", HoldingsRoute);
 app.use("/positions", PositionsRoute);
 app.use("/orders", OrderRoute);
 
-app.listen(PORT, () => {
-  console.log("Server listening to port 3002");
-  mongoose.connect(uri);
-  console.log("DB connected");
-});
+// app.listen(PORT, () => {
+//   console.log("Server listening to port 3002");
+//   mongoose.connect(uri);
+//   console.log("DB connected");
+// });
+
+// Export the app for the serverless function
+module.exports = app;

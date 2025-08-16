@@ -1,0 +1,5 @@
+[build]
+  # This command will be run on Netlify's servers to install your dependencies.
+  command = "npm install"
+  # This is the directory where your serverless functions are located.
+  functions = "functions"
