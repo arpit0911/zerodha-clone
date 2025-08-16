@@ -30,6 +30,10 @@ app.use(
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.use("/auth", AuthRoute);
 app.use("/init", InitRoute);
 app.use("/holdings", HoldingsRoute);
