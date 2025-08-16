@@ -11,7 +11,7 @@ export const Hero = () => {
         Check out our
         <a href="/" style={{ textDecoration: "none" }}>
           investment offerings&nbsp;
-          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         </a>
       </p>
     </div>

@@ -21,7 +21,7 @@ export const Education = () => {
           </p>
           <a href="/" style={{ textDecoration: "none" }}>
             Varsity
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
           <p className="mt-5">
             TradingQ&A, the most active trading and investment community in
@@ -29,7 +29,7 @@ export const Education = () => {
           </p>
           <a href="/" style={{ textDecoration: "none" }}>
             TradingQ&A
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
       </div>

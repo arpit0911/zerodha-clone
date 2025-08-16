@@ -20,11 +20,11 @@ export const LeftSection = ({
           <p className="fs-6">{productDescription}</p>
           <div className="mb-4">
             <a className="me-5 text-decoration-none" href={tryDemo}>
-              Try Demo <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              Try Demo <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
             <a className="me-5 text-decoration-none" href={learnMore}>
               Learn More{" "}
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
           <div>

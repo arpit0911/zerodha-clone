@@ -31,33 +31,33 @@ export const Hero = () => {
                 placeholder="Eg: how do i activate F&O, why is my order getting rejected ..."
               />
               <span className="input-group-text bg-white border-start-0 rounded-0">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true"></i>
               </span>
             </div>
             <div className="d-flex my-3 flex-wrap">
               <a
                 href="/"
-                class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
+                className="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
               >
                 Track account opening
               </a>
               <a
                 href="/"
-                class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
+                className="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
               >
                 Track segment activation
               </a>
 
               <a
                 href="/"
-                class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
+                className="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3"
               >
                 Intraday margins
               </a>
 
               <a
                 href="/"
-                class="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3 "
+                className="fw-bold text-white border-bottom border-white pb-1 text-decoration-none me-3 mb-3 "
               >
                 Kite user manual
               </a>

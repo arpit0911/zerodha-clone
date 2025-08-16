@@ -10,7 +10,7 @@ export const CreateTicket = () => {
         <div className="col-4">
           <div>
             <h1 className="fs-5">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+              <i className="fa fa-plus-circle" aria-hidden="true"></i>
               &nbsp;&nbsp;Account Opening
             </h1>
             <div className="row ms-3">
@@ -53,7 +53,7 @@ export const CreateTicket = () => {
           </div>
           <div className="mt-5">
             <h1 className="fs-5">
-              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <i className="fa fa-credit-card" aria-hidden="true"></i>
               &nbsp;&nbsp;Funds
             </h1>
             <div className="row ms-3">
@@ -91,7 +91,7 @@ export const CreateTicket = () => {
         <div className="col-4">
           <div>
             <h1 className="fs-5">
-              <i class="fa fa-user-o" aria-hidden="true"></i>
+              <i className="fa fa-user-o" aria-hidden="true"></i>
               &nbsp;&nbsp;Your Zerodha Account
             </h1>
             <div className="row ms-3">
@@ -134,7 +134,7 @@ export const CreateTicket = () => {
           </div>
           <div className="mt-5">
             <h1 className="fs-5">
-              <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+              <i className="fa fa-circle-o-notch" aria-hidden="true"></i>
               &nbsp;&nbsp;Console
             </h1>
             <div className="row ms-3">
@@ -186,7 +186,7 @@ export const CreateTicket = () => {
         <div className="col-4">
           <div>
             <h1 className="fs-5">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <i className="fa fa-bar-chart" aria-hidden="true"></i>
               &nbsp;&nbsp;Kite
             </h1>
             <div className="row ms-3">
@@ -236,7 +236,7 @@ export const CreateTicket = () => {
           </div>
           <div className="mt-5">
             <h1 className="fs-5">
-              <i class="fa fa-circle-o" aria-hidden="true"></i>
+              <i className="fa fa-circle-o" aria-hidden="true"></i>
               &nbsp;&nbsp;Coin
             </h1>
             <div className="row ms-3">

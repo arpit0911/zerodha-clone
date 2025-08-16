@@ -1,5 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 // Create the context
 const AuthContext = createContext();
@@ -8,22 +10,47 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
   console.log("auth provider", user);
+
+  const handleError = (err) =>
+    toast.error(err, {
+      position: "bottom-left",
+    });
+  const handleSuccess = (msg) =>
+    toast.success(msg, {
+      position: "bottom-right",
+    });
+
   // Function to log in
   const login = async (email, password) => {
     try {
-      const response = await axios.post("http://localhost:3002/auth/login", {
-        email,
-        password,
-      });
-      setUser(response.data.user);
-      // Store the token (e.g., in localStorage or a cookie)
-      localStorage.setItem("authToken", response.data.token);
+      const { data } = await axios.post(
+        `${process.env.REACT_APP_BACKEND_URL}/auth/login`,
+        {
+          // Only send necessary data to the backend
+          email,
+          password,
+        },
+        { withCredentials: true }
+      );
+      const { success, message } = data;
+      if (success) {
+        handleSuccess(message);
+        // console.log("success->", message);
+        setTimeout(() => {
+          //   window.location.href = process.env.REACT_APP_DASHBOARD_URL;
+          navigate("/about");
+        }, 1000);
+      } else {
+        handleError(message);
+        console.log("error->", message);
+      }
     } catch (error) {
-      console.error("Login failed:", error);
-      throw error;
+      console.log(error);
     }
   };
+
 
   // Function to log out
   const logout = () => {
@@ -54,6 +81,7 @@ export const AuthProvider = ({ children }) => {
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}
+      <ToastContainer />
     </AuthContext.Provider>
   );
 };
