@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { Link } from "react-router-dom";
 import { useAuth } from "../../Auth/AuthProvider";
 
 export const Login = ({ handleSwitchLogin }) => {
-  const { user, login } = useAuth();
-  // const navigate = useNavigate();
+  const { login } = useAuth();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -15,34 +13,10 @@ export const Login = ({ handleSwitchLogin }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-
   const handleLogin = async (e) => {
     e.preventDefault();
     const { email, password } = formData;
     login(email, password);
-    // try {
-    //   const { data } = await axios.post(
-    //     `${process.env.REACT_APP_BACKEND_URL}/auth/login`,
-    //     {
-    //       // Only send necessary data to the backend
-    //       email,
-    //       password,
-    //     },
-    //     { withCredentials: true }
-    //   );
-    //   const { success, message } = data;
-    //   if (success) {
-    //     handleSuccess(message);
-    //     setTimeout(() => {
-    //       window.location.href = process.env.REACT_APP_DASHBOARD_URL;
-    //       //   navigate("/");
-    //     }, 1000);
-    //   } else {
-    //     handleError(message);
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
     setFormData({
       email: "",
       password: "",

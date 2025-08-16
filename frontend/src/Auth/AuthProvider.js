@@ -22,6 +22,39 @@ export const AuthProvider = ({ children }) => {
       position: "bottom-right",
     });
 
+  const signUp = async ({ username, email, password, confirmPassword }) => {
+    if (password !== confirmPassword) {
+      handleError("Passwords do not match.");
+      return;
+    }
+    try {
+      const { data } = await axios.post(
+        `${process.env.REACT_APP_BACKEND_URL}/auth/signup`,
+        {
+          // Only send necessary data to the backend
+          username,
+          email,
+          password,
+        },
+        { withCredentials: true }
+      );
+      const { success, message, user } = data;
+      if (success) {
+        handleSuccess(message);
+        setUser(user);
+        setTimeout(() => {
+          // window.location.href = process.env.REACT_APP_DASHBOARD_URL;
+          navigate("/support");
+        }, 1000);
+      } else {
+        handleError(message);
+      }
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  };
+
   // Function to log in
   const login = async (email, password) => {
     try {
@@ -48,9 +81,9 @@ export const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
+      throw error;
     }
   };
-
 
   // Function to log out
   const logout = () => {
@@ -73,6 +106,7 @@ export const AuthProvider = ({ children }) => {
   const value = {
     user,
     loading,
+    signUp,
     login,
     logout,
   };
