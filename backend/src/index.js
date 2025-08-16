@@ -17,9 +17,13 @@ const OrderRoute = require("./routes/OrderRoute");
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 
-const app = express();
+// Connect to MongoDB
+mongoose.connect(uri)
+  .then(() => console.log("MongoDB connected successfully."))
+  .catch(err => console.error("MongoDB connection error:", err));
 
-app.use(mongoose.connect(uri).then(() => console.log("MongoDB connected.")));
+
+const app = express();
 app.use(
   cors({
     origin: ["http://localhost:3000", "http://localhost:3001"],
