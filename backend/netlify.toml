@@ -3,3 +3,6 @@
   command = "npm install"
   # This is the directory where your serverless functions are located.
   functions = "functions"
+
+[functions]
+  included_files = ["src/**"]
