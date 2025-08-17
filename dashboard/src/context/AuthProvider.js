@@ -30,73 +30,6 @@ export const AuthProvider = ({ children }) => {
     });
   };
 
-  const signUp = async ({ username, email, password, confirmPassword }) => {
-    if (password !== confirmPassword) {
-      handleError("Passwords do not match.");
-      return;
-    }
-    try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/auth/signup`,
-        {
-          // Only send necessary data to the backend
-          username,
-          email,
-          password,
-        },
-        { withCredentials: true }
-      );
-      const { success, message, user: signedUpUser } = data;
-      if (success) {
-        handleSuccess(message);
-        setUser(signedUpUser?.username);
-        setTimeout(() => {
-          window.location.href = process.env.REACT_APP_DASHBOARD_URL;
-          // navigate("/");
-        }, 1000);
-      } else {
-        handleError(message);
-      }
-    } catch (error) {
-      console.log(error);
-      handleError(
-        error.response?.data?.message || "An error occurred during sign up."
-      );
-    }
-  };
-
-  // Function to log in
-  const login = async (email, password) => {
-    try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/auth/login`,
-        {
-          // Only send necessary data to the backend
-          email,
-          password,
-        },
-        { withCredentials: true }
-      );
-      const { success, message, user: loggedInUser } = data;
-      if (success) {
-        handleSuccess(message);
-        setUser(loggedInUser); // Set user state immediately on login
-        setTimeout(() => {
-          window.location.href = process.env.REACT_APP_DASHBOARD_URL;
-          // navigate("/");
-        }, 1000);
-      } else {
-        handleError(message);
-        console.log("error->", message);
-      }
-    } catch (error) {
-      console.log(error);
-      handleError(
-        error.response?.data?.message || "An error occurred during login."
-      );
-    }
-  };
-
   // Function to log out
   const logout = () => {
     setUser(null);
@@ -119,17 +52,21 @@ export const AuthProvider = ({ children }) => {
           const { status, user: verifiedUser } = data;
           if (status) {
             setUser(verifiedUser);
-            handleInfo(`Welcome back, ${verifiedUser}!`);
+            // handleInfo(`Welcome back, ${verifiedUser}!`);
           } else {
             // Token is invalid or expired
             removeCookie("token");
             setUser(null);
+            window.location.href = `${process.env.REACT_APP_FRONTEND_URL}`;
           }
         } catch (error) {
           console.error("Verification failed:", error);
           removeCookie("token");
           setUser(null);
         }
+      } else {
+        // console.log("no token", process.env.REACT_APP_FRONTEND_URL);
+        window.location.href = `${process.env.REACT_APP_FRONTEND_URL}`;
       }
       setLoading(false); // Set loading to false after verification attempt
     };
@@ -141,8 +78,6 @@ export const AuthProvider = ({ children }) => {
   const value = {
     user,
     loading,
-    signUp,
-    login,
     logout,
   };
 
