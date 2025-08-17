@@ -166,6 +166,23 @@ export const Navbar = () => {
           )}
         </div>
       </nav>
+      {user && (
+        <div
+          class="alert alert-primary container d-flex align-items-center justify-content-between"
+          role="alert"
+        >
+          Your Zerodha account is active, Welcome aboard, and happy investing!
+          🎉
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              (window.location.href = process.env.REACT_APP_DASHBOARD_URL)
+            }
+          >
+            Dashboard
+          </button>
+        </div>
+      )}
     </>
   );
 };

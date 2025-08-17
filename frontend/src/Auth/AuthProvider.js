@@ -148,7 +148,7 @@ export const AuthProvider = ({ children }) => {
   // Render the provider with the value
   return (
     <AuthContext.Provider value={value}>
-      {!loading ? children : <div>Loading...</div>}{" "}
+      {!loading ? children : <div>Loading...</div>}
       {/* Show a loading indicator */}
       <ToastContainer />
     </AuthContext.Provider>
