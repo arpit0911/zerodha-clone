@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const handleError = (err) =>
     toast.error(err, {
-      position: "bottom-left",
+      position: "bottom-right",
     });
   const handleSuccess = (msg) =>
     toast.success(msg, {
@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
 
   const handleInfo = (msg) => {
     toast.info(msg, {
-      position: "top-right",
+      position: "bottom-right",
     });
   };
 

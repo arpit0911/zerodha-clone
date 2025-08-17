@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Universe = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mt-5 pt-5 text-center">
       <div className="text-center mb-5">
@@ -98,6 +100,7 @@ export const Universe = () => {
         <button
           className="btn btn-primary p-3 fs-5 mb-5"
           style={{ width: "20%", margin: "0 auto" }}
+          onClick={() => navigate("/signup")}
         >
           Sign up Now
         </button>
